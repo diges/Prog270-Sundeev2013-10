@@ -1,6 +1,6 @@
 var http = require('http');
 var url = require('url');
-var port = process.env.C9_PORT || 1337;
+var port = process.env.PORT || 1337;
 var fs = require('fs');
 
 function getPath(request) {
@@ -22,20 +22,44 @@ function first(request, response) {
         var css = fs.readFileSync(__dirname + path);
         response.writeHead(200, {'Content-Type': 'text/css'});
         response.write(css);
-    } if (path === '/About.html') {
-        var css = fs.readFileSync(__dirname + path);
-        response.writeHead(200, {'Content-Type': 'text/html', 'Content-Length': '0'});
-        response.write(css);
-    } if (path === '/Contacts.html') {
-        var css = fs.readFileSync(__dirname + path);
-        response.writeHead(200, {'Content-Type': 'text/html', 'Content-Length': '0'});
-        response.write(css);
+        response.end();
+    } else if (path === '/About.html') {
+        var aboutHtml = fs.readFileSync(__dirname + path);
+        response.writeHead(200, {'Content-Type': 'text/html', 'Content-Length': '2117'});
+        response.write(aboutHtml);
+        response.end();
+    } else if (path === '/me.png') {
+        var img = fs.readFileSync(__dirname + path);
+        response.writeHead(200, {"Content-Type": "image/png"});
+        response.end(img, 'binary');
+        //response.end();
+    } else if (path === '/Contacts.html') {
+        var contactsHtml = fs.readFileSync(__dirname + path);
+        response.writeHead(200, {'Content-Type': 'text/html', 'Content-Length': '1940'});
+        response.write(contactsHtml);
+        response.end();
+    } else if (path === '/favicon.png') {
+        fs.readFile(__dirname + path, "binary", function(err, file) {
+            console.log("Favicon detected");
+            if(err) {
+                console.log("Error reading binary file");
+                response.writeHeader(500, {"Content-Type": "text/plain"});
+                response.write(err + "\n");
+                response.end();
+            }
+            else{
+                console.log("Favicon loaded");
+                response.writeHeader(200, {"Content-Type": "image/png"});
+                response.write(file, "binary");
+                response.end();
+            }
+        });
     } else {
         var html = fs.readFileSync(__dirname + '/index.html');
         response.writeHead(200, {'Content-Type': 'text/html'});
         response.write(html);
+        response.end();
     }
-    response.end();
 }
 
 http.createServer(first).listen(port);
