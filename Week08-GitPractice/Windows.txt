@@ -1,0 +1,14 @@
+ Volume in drive C has no label.
+ Volume Serial Number is F434-B36C
+
+ Directory of C:\Users\dmitry.sundeev\Documents\GitHub\Prog270-Sundeev2013-10\Week08-GitPractice
+
+11/12/2013  05:40 PM                 0 Test01.md
+11/12/2013  05:40 PM                 0 Test02.md
+11/12/2013  06:37 PM               374 CloudNine.txt
+11/12/2013  06:37 PM    <DIR>          images
+11/12/2013  06:40 PM    <DIR>          ..
+11/12/2013  06:40 PM                 0 Windows.txt
+11/12/2013  06:40 PM    <DIR>          .
+               4 File(s)            374 bytes
+               3 Dir(s)  140,844,572,672 bytes free
