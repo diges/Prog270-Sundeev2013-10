@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>Dmitry MongoDb assignment</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+		<link href="Carousel.css" rel="stylesheet" type="text/css" />
+		<link href="index.css" rel="stylesheet" type="text/css" />
+		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="angular.js"></script>
+		<script src="angular-resource.js"></script>
+		<script src="MongoData.js"></script>
+	</head>
+	<body>
+
+
+
+	<!-- Nav Bar 
+		================================================== -->
+		
+		<div class="navbar-wrapper">
+      	<div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand" href="#">Week08-MongoDB</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="wdresses.html">Pictures</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wdresses.html">Pictures</a></li>
+                    <li><a href="About.html">About</a></li>                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+		</div>
+		</div> <!-- Navbar wrapper -->
+
+		<!-- Carousel
+		================================================== -->
+		<div id="myCarousel" class="carousel slide">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="add/slider1.jpg">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Dmitry's courusel on bootstrap</h1>
+
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="add/slider5.jpg">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Bootstrap is a very nice library</h1>
+
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="add/slider7.jpg">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Go around on the carousel</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div><!-- /.carousel -->
+
+
+	<div class="container">
+		<h3>Some pictures with text</h3>
+		
+		<div class="row">
+			<div class="col-md-4"><img src="img/wd1.jpg" alt="wd1.jpg"> <p>Picture 1</p></div>
+			<div class="col-md-4"><img src="img/wd2.jpg" alt="wd2.jpg"> <p>Picture 1</p></div>
+			<div class="col-md-4"><img src="img/wd3.jpg" alt="wd3.jpg"> <p>Picture 1</p></div>
+            <div class="col-md-4"><img src="img/wd4.jpg" alt="wd4.jpg"> <p>Picture 1</p></div>
+			<div class="col-md-4"><img src="img/wd5.jpg" alt="wd5.jpg"> <p>Picture 1</p></div>
+			<div class="col-md-4"><img src="img/wd6.jpg" alt="wd6.jpg"> <p>Picture 1</p></div>
+		</div>
+
+		<hr>
+
+		<footer>
+			<p>&copy; Dmitry Sundeev 2013 | Week08-MongoDB</p>
+		</footer>
+	</div> <!-- /container -->
+
+	</body>
+</html>
