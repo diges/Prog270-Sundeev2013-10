@@ -67,10 +67,27 @@
 
 				<div id="monogoData" ng-controller="MyController">
 					<p>This project retrieves a image links from a MongoDB.</p>
+                    <p>I know working with DB was not required but I tried and it still not working :(, need help </p>
 					<!--<p>Rows in DB: {{presidentsLength}}</p> -->
 					<ul>
 						<li ng-repeat="president in presidents">
+                        	
 							<p> First Name: {{president.getPresidentName()}} </p>
+                            
+                            <!-- 
+                            I dont understan why my code not working :(
+                            I wnted to read some html from mongDB
+                            
+                            record example:
+                            {
+                                "_id": {
+                                    "$oid": "52997fa9e4b03ba5bfae2e96"
+                                },
+                                "firstname": "&lt;img class=&quot;featurette-image img-responsive&quot; src=&quot;https://googledrive.com/host/0B50IDyyHJuqMQ1ZMWWN1UC1EbmM/Screenshot_1.jpg&quot; alt=&quot;Screenshot_2013-11-19-18-31-53.jpg&quot;&gt;"
+                            }
+                            -->
+                            
+                            
 						</li>
 					</ul>
                 </div>		
