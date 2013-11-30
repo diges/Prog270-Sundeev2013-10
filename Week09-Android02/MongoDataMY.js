@@ -29,7 +29,6 @@ angular.module('pres', ['ngResource'])
 .factory('presidents', function($resource) {
 	console.log('Presidents factory called');
 	var Presidents = $resource('https://api.mongolab.com/api/1/databases/week09db/collections/imglink/:id', {
-      // apiKey:'4fb51e55e4b02e56a67b0b66',
       apiKey:'r2M_1ysAKhhw72yIPqZgmnArkXJkTBlv',
       id:'@_id.$oid'
     });
