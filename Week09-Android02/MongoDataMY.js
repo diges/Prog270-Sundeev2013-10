@@ -38,13 +38,13 @@ angular.module('pres', ['ngResource'])
       return this.firstname;
     };
     
-    /*Presidents.prototype.getTermStart = function() {
+    Presidents.prototype.getTermStart = function() {
     	return this.lastname;
     };
     
     Presidents.prototype.getTermEnd = function() {
     	return this.age;
-    }; */
+    }; 
 
     return Presidents;    
 	 
