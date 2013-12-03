@@ -7,10 +7,22 @@ angular.module('elvenApp', ['pres'])
 .controller('MyController', function($scope, $http, presidents) {
     $scope.hint = "<p>Start with <strong>node server.js</strong> to retrieve JSON from Server</p>";
     
+    var showImage = function(image) {
+        var target02 = $('#imageDiv');
+    	var $element = target02.append('<div/>').find(':last');
+        $element.css({
+    		position: 'absolute',
+    		width: 100,
+    		height: 75,
+    		backgroundImage: 'url(' + image + ')'	
+    	});
+    };
+    
     // $scope.presidents = presidents;
     $scope.presidents = presidents.query({}, function(users) {
       $scope.presidentsLength = $scope.presidents.length;
       console.log($scope.presidentsLength);
+      showImage(users[0].firstname);
     });
 	
 	var getDataJson = $http.get('data.json');
