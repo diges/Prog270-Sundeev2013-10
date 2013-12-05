@@ -28,7 +28,7 @@ function listBuckets(s3) {
 function writeFile(localFileName, nameOnS3, binary) {
 	// Read in the file, convert it to base64, store to S3
 	
-	nameOnS3 = "Week09Android" + nameOnS3;
+	nameOnS3 = "Week07-Midterm" + nameOnS3;
 	
 	fs.readFile(localFileName, function(err, data) {
 		if (err) {
@@ -140,11 +140,20 @@ function walkDirs(folderName) {
 	});
 
 }
-
-walkDirs('Images')
-walkDirs('Source');
-walkDirs('Style');
+walkDirs('img');
+walkDirs('add');
 writeFile('index.html', '/index.html', false);
-writeFile('Pictures.html', '/Pictures.html', false);
+writeFile('Contacts.html', '/Contacts.html', false);
 writeFile('About.html', '/About.html', false);
+writeFile('favicon.png', '/favicon.png', false);
+writeFile('index.css', '/index.css', false);
+writeFile('index.js', '/index.js', false);
+writeFile('Grid.css', '/Grid.css', false);
+writeFile('Shapes04.png', '/Shapes04.png', false);
+writeFile('wdresses.html', '/wdresses.html', false);
+writeFile('Presidents.html', '/Presidents.html', false);
+writeFile('MongoDataMY.js', '/MongoDataMY.js', false);
+writeFile('angular-resource.js', '/angular-resource.js', false);
+writeFile('angular-mocks.js', '/angular-mocks.js', false);
+writeFile('angular.js', '/angular.js', false);
 //listBuckets(s3);
