@@ -1,0 +1,150 @@
+/* Maximum */
+@media screen and (min-width: 1025px) {
+body {
+    background-color: #000066;
+    color: #2255ff;
+}
+
+p {
+    font-size:large;    
+}
+
+header {
+    background-color: #0000bb;
+    color: #aaaaff; 
+}
+
+article {
+    background-color: #0000ff;
+    color: #000055;     
+}
+
+.position01 {
+    width: 50px;
+    height: 50px;
+    background-color: #7777FF;
+    font-weight:bold;
+}
+
+.position02 {
+    width: 50px;
+    height: 50px;
+    background-color: #5555FF;
+    font-weight:bold;
+}
+
+.position03 {
+    width: 50px;
+    height: 50px;
+    background-color: #3333FF;
+    font-weight:bold;
+}
+
+div {
+	float:left;
+	margin:10px 0px 0px 1px;
+}
+
+
+}
+
+
+/* Medium */
+@media screen and (max-width: 1024px) {
+body {
+    background-color: #006600;
+    color: #ff5522;
+}
+
+p {
+    font-size:large;    
+}
+
+header {
+    background-color: #00bb00;
+    color: #aaFFaa; 
+}
+
+article {
+    background-color: #00EE00;
+    color: #008800;     
+}
+
+.position01 {
+    width: 50px;
+    height: 50px;
+    background-color: #aaFFaa;
+    font-weight:bold;
+}
+
+.position02 {
+    width: 50px;
+    height: 50px;
+    background-color: #77FF77;
+    font-weight:bold;
+}
+
+.position03 {
+    width: 50px;
+    height: 50px;
+    background-color: #44FF44;
+    font-weight:bold;
+}
+
+div {
+	float:left;
+	margin:10px 0px 0px 1px;
+}
+
+}
+
+/* Small */
+@media screen and (max-width: 520px) {
+
+body {
+    background-color: #550000;
+    color: #440000;
+}
+
+p {
+    font-size:large;    
+}
+
+header {
+    background-color: #AA0000;
+    color: #FFBBBB; 
+}
+
+article {
+    background-color: #FF0000;
+    color: #881100;     
+}
+
+.position01 {
+    width: 50px;
+    height: 50px;
+    background-color: #FFBBBB;
+    font-weight:bold;
+}
+
+.position02 {
+    width: 50px;
+    height: 50px;
+    background-color: #FF8888;
+    font-weight:bold;
+}
+
+.position03 {
+    width: 50px;
+    height: 50px;
+    background-color: #FF5555;
+    font-weight:bold;
+}	
+
+div {
+	float:none;
+	margin:10px 0px 0px 1px;
+}
+
+
+}	
