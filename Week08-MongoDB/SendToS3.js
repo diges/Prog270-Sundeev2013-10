@@ -148,8 +148,6 @@ writeFile('About.html', '/About.html', false);
 writeFile('favicon.png', '/favicon.png', false);
 writeFile('index.css', '/index.css', false);
 writeFile('Carousel.css', '/Carousel.css', false);
-writeFile('Grid.css', '/Grid.css', false);
-writeFile('Shapes04.png', '/Shapes04.png', false);
 writeFile('wdresses.html', '/wdresses.html', false);
 writeFile('MongoData.js', '/MongoData.js', false);
 writeFile('angular-resource.js', '/angular-resource.js', false);
