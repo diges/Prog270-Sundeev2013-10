@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'aws-skd' ]
+2 info using npm@1.3.14
+3 info using node@v0.10.22
+4 verbose node symlink /usr/bin/node
+5 warn package.json Walk09Android@0.1.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'aws-skd', null ]
+8 verbose cache add name=undefined spec="aws-skd" args=["aws-skd",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'aws-skd',
+9 verbose parsed url   path: 'aws-skd',
+9 verbose parsed url   href: 'aws-skd' }
+10 silly lockFile 17d6168c-aws-skd aws-skd
+11 verbose lock aws-skd /home/adminuser/.npm/17d6168c-aws-skd.lock
+12 silly lockFile 17d6168c-aws-skd aws-skd
+13 silly lockFile 17d6168c-aws-skd aws-skd
+14 verbose addNamed [ 'aws-skd', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile a02d3fe7-aws-skd aws-skd@
+17 verbose lock aws-skd@ /home/adminuser/.npm/a02d3fe7-aws-skd.lock
+18 silly addNameRange { name: 'aws-skd', range: '*', hasData: false }
+19 verbose url raw aws-skd
+20 verbose url resolving [ 'https://registry.npmjs.org/', './aws-skd' ]
+21 verbose url resolved https://registry.npmjs.org/aws-skd
+22 info trying registry request attempt 1 at 02:12:47
+23 http GET https://registry.npmjs.org/aws-skd
+24 http 404 https://registry.npmjs.org/aws-skd
+25 silly registry.get cb [ 404,
+25 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+25 silly registry.get     date: 'Thu, 05 Dec 2013 07:12:47 GMT',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'content-length': '52',
+25 silly registry.get     'cache-control': 'must-revalidate' } ]
+26 silly lockFile a02d3fe7-aws-skd aws-skd@
+27 silly lockFile a02d3fe7-aws-skd aws-skd@
+28 error 404 'aws-skd' is not in the npm registry.
+28 error 404 You should bug the author to publish it
+28 error 404
+28 error 404 Note that you can also install from a
+28 error 404 tarball, folder, or http url, or git url.
+29 error System Linux 3.8.0-33-generic
+30 error command "/usr/bin/node" "/usr/bin/npm" "install" "aws-skd"
+31 error cwd /home/adminuser/Documents/Git/Prog270-Sundeev2013-10/Week09Android03
+32 error node -v v0.10.22
+33 error npm -v 1.3.14
+34 error code E404
+35 verbose exit [ 1, true ]
